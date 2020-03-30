@@ -13,10 +13,23 @@ $(document).ready(function() {
     // Console.log() those vars
 
     // Put them into an array
-     var yourFavorites = [".animal", ".child", ".adult"];
+
+    // var myArr = [];
+    // myArr.push("1");
+    // myArr.push("2");
+
+     var yourFavorites = [];
+      yourFavorites.push(animal);
+      yourFavorites.push(child);
+      yourFavorites.push(adult);
     // console.log(yourFavorites);
-     
+
+     $("#animal").text(yourFavorites[0]);
+     $("#child").text(yourFavorites[1]);
+     $("#adult").text(yourFavorites[2]);    
      // display them on the DOM
+   
+
   });
 });
 
